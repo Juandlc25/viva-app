@@ -46,10 +46,10 @@ function ContactForm() {
         </div>
 
         <div className="flex justify-end">
-        <button className='text-white bg-secondary px-5 py-3 rounded max-w-max'>Send A Message</button>
-
+          <button className="text-white bg-secondary px-5 py-3 rounded max-w-max">
+            Send A Message
+          </button>
         </div>
-
       </form>
     </div>
   );

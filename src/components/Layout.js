@@ -29,10 +29,8 @@ function Layout({ children }) {
 
   return (
     <div>
-      {/* content */}
       <div className="pb-44 overflow-x-hidden">{children}</div>
 
-      {/* footer */}
       <div className="fixed bottom-10 left-0 right-0 sm:bottom-0">
         <div className="flex w-full justify-center">
           {menuItems.map((item, index) => (

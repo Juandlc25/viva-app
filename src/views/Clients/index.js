@@ -1,15 +1,15 @@
-import React from 'react'
-import Layout from '../../components/Layout'
-import ClientsList from './ClientsList'
-import Intro from './Intro'
+import React from "react";
+import Layout from "../../components/Layout";
+import ClientsList from "./ClientsList";
+import Intro from "./Intro";
 
 function Clients() {
   return (
     <Layout>
-        <Intro />
-        <ClientsList/>
+      <Intro />
+      <ClientsList />
     </Layout>
-  )
+  );
 }
 
-export default Clients
+export default Clients;

@@ -79,10 +79,17 @@ function ClientsList() {
             clients[selectedClientIndex],
             clients[selectedClientIndex + 1],
             clients[selectedClientIndex + 2],
-          ].map((item) => (
-            <div className="bg-white shadow p-5 w-[400px] sm:w-auto sm:h-auto border h-[350px]">
+          ].map((item, key) => (
+            <div
+              key={key}
+              className="bg-white shadow p-5 w-[400px] sm:w-auto sm:h-auto border h-[350px]"
+            >
               <div className="flex space-x-10 sm:space-x-0 items-center justify-between sm:flex-col">
-                <img src={item.logo} alt="" className="h-32 w-32 z-20 sm:w-10 sm:h-10" />
+                <img
+                  src={item.logo}
+                  alt=""
+                  className="h-32 w-32 z-20 sm:w-10 sm:h-10"
+                />
                 <h1 className="text-primary font-semibold text-2xl">
                   {item.name}
                 </h1>
@@ -102,11 +109,12 @@ function ClientsList() {
 
       <div className="flex justify-center mt-10">
         <div className="flex space-x-2">
-          {[1, 2, 3, 4,5].map((item, index) => (
+          {[1, 2, 3, 4, 5].map((item, index) => (
             <div
-              onClick={()=>setSelectedClientIndex(index)}
+              onClick={() => setSelectedClientIndex(index)}
               className={`bg-gray-200 h-4 w-4 rounded-full cursor-pointer hover:scale-105 transition-all transform duration-300 ${
-                selectedClientIndex === index && "border-2 border-secondary h-5 w-5"
+                selectedClientIndex === index &&
+                "border-2 border-secondary h-5 w-5"
               }`}
             ></div>
           ))}
